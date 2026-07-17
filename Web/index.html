@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Console</title>
 </head>
@@ -11,6 +14,19 @@
 <body>
     <div id="QueryBox">
         <textarea type="text" id="QueryField" placeholder="Ask anything, use @ to mention attachments"></textarea>
+        <div id="ActionRow">
+            <button id="AddAttachments" class="buttons">
+                <i data-lucide="plus"></i>
+            </button>
+            <button id="ModelSelector">
+                gemma4:e4b
+                <i data-lucide="chevrons-up-down" class="buttons"></i>
+            </button>
+            <div style="flex:1;"></div> <!--spacer-->
+            <button id="SubmitQuery">
+                <i data-lucide=" forward" style="color: var(--bg);"></i>
+            </button>
+        </div>
     </div>
 </body>
 <script src="https://unpkg.com/lucide@latest"></script>

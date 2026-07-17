@@ -1,29 +1,97 @@
+:root {
+    --bg: #141314;
+    --primary: white;
+    --secondary: gray;
+    --border: #4d4d4d;
+    --padding-sm: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
 body {
     padding: 24px;
-    background-color: #141314;
+    background-color: var(--bg);
+    color: var(--primary);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.buttons {
+    color: var(--secondary);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AddAttachments svg {
+    height: 30px;
+    width: 30px;
 }
 
 #QueryBox {
     background-color: #333333;
     padding: 16px;
-    border-radius: 24px;
-    border: 1.5px solid #4d4d4d;
+    border-radius: 32px;
+    border: 1.5px solid var(--border);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
     height: auto;
     resize: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 #QueryField {
     background-color: inherit;
     border: none;
-    color: white;
+    color: var(--primary);
     width: 100%;
     height: auto;
     box-sizing: border-box;
     resize: none;
+    font-family: inherit;
 }
 
 #QueryField:focus {
     border: none;
     outline: none;
+}
+
+#ActionRow {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+}
+
+#ModelSelector {
+    color: var(--primary);
+    background-color: inherit;
+    padding: 10px;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+#SubmitQuery {
+    background-color: var(--primary);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
