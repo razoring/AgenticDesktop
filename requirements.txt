@@ -1,1 +1,15 @@
+fastapi
+uvicorn
+websockets
+playwright
+playwright-stealth
+pyautogui
+mss
+apscheduler
+requests
+pydantic
+chromadb
+pillow
+duckduckgo-search
+python-multipart
 ollama
